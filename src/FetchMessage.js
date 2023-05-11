@@ -7,7 +7,7 @@ const getAllMessages = (setMessage) => {
     })
 }
 
-const newMessage = (title, setTitle, setMessage) => {
+const saveMessage = (title, setTitle, setMessage) => {
     axios.post(`https://form-nv.onrender.com/saveMessage`, { title })
     .then((data) => {
         console.log(data)
@@ -16,4 +16,4 @@ const newMessage = (title, setTitle, setMessage) => {
     })
 }
 
-export{ getAllMessages, newMessage }
+export{ getAllMessages, saveMessage }
